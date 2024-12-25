@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="stylesheet" href="../lib/layui/css/layui.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <div class="header container">
+    仿站电商平台
+    <p class="off active">您好！<a href="./login.html">请登录</a></p>
+    <p class="on ">你好！
+      <span class="nickname">用户昵称</span>
+      <button class="self">个人中心</button>
+      <button class="logout">退出登录</button>
+    </p>
+  </div>
+  <div class="list container"><a href="./list.html">购买商品</a></div>
+
+  <!-- 如需重新渲染新图片,只需渲染#carousel 元素对一个内容即可-->
+  <div class="layui-carousel container" id="carousel">
+    <div carousel-item>
+      <div><img src="../img/img1.jpg"></div>
+      <div><img src="../img/img2.jpg"></div>
+      <div><img src="../img/img3.jpg"></div>
+      <div><img src="../img/img4.jpg"></div>
+      <div><img src="../img/img5.jpg"></div>
+    </div>
+  </div>
+  <script type="module">
+    // 轮播图效果,注意不用修改此代码
+    import '../lib/layui/layui.js';    
+    layui.carousel.render({
+      elem: '#carousel', // 选择器
+      width: '1200px', //设置容器宽度
+      height: '600px',
+      arrow: 'hover',
+      anim: 'fade' //切换动画方式
+    });
+  </script>
+</body>
+<script src="../lib/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../lib/layui/layui.js"></script>
+
+</html>

@@ -1,0 +1,94 @@
+/* 主内容区域 */
+.content {
+  display: flex;
+  height: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  border-radius: 10px; /* 添加圆角 */
+  overflow: hidden; /* 防止内容溢出 */
+  background: linear-gradient(90deg, #f7f7f7, #ffffff); /* 添加渐变背景 */
+  transition: transform 0.3s ease; /* 添加动态过渡效果 */
+}
+
+.content:hover {
+  transform: scale(1.02); /* 鼠标悬停时放大效果 */
+}
+
+/* 左侧内容区域 */
+.content > .left {
+  width: 600px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  background: #ffffff; /* 白色背景 */
+  border-right: 2px solid #f0f0f0; /* 添加右侧边框 */
+  padding: 10px; /* 添加内边距 */
+  border-radius: 10px 0 0 10px; /* 左侧圆角 */
+  transition: background 0.3s ease;
+}
+
+.content > .left:hover {
+  background: #f9f9f9; /* 鼠标悬停时改变背景色 */
+}
+
+/* 右侧内容区域 */
+.content > .right {
+  flex: 1;
+  background-color: #ffe4e1; /* 替换为柔和的粉色 */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 0 10px 10px 0; /* 右侧圆角 */
+}
+
+/* 标题样式 */
+.content > .right > .title {
+  font-size: 28px; /* 更大字体 */
+  font-weight: bold; /* 加粗 */
+  color: #333; /* 深色字体 */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 添加文本阴影 */
+}
+
+/* 价格样式 */
+.content > .right > .price {
+  color: #ff0000; /* 突出红色 */
+  font-size: 42px; /* 增大字体 */
+  font-weight: bold; /* 加粗 */
+  margin-bottom: 10px; /* 添加下边距 */
+}
+
+/* 原价样式 */
+.content > .right .old {
+  color: #999; /* 更柔和的灰色 */
+  text-decoration: line-through;
+  font-size: 18px; /* 调整字体大小 */
+  margin-bottom: 10px;
+}
+
+/* 折扣样式 */
+.content > .right .discount {
+  color: #32cd32; /* 深绿色 */
+  font-weight: bold; /* 加粗 */
+  font-size: 20px; /* 增大字体 */
+  margin-bottom: 10px;
+}
+
+/* 按钮样式 */
+.content > .right > button {
+  padding: 10px 20px; /* 更大的内边距 */
+  font-size: 20px;
+  font-weight: bold; /* 按钮文字加粗 */
+  color: #fff; /* 白色文字 */
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* 渐变背景 */
+  border: none; /* 去掉边框 */
+  border-radius: 5px; /* 添加圆角 */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  transition: background 0.3s ease, transform 0.3s ease; /* 动态过渡效果 */
+}
+
+.content > .right > button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f); /* 悬停时反转渐变色 */
+  transform: scale(1.05); /* 悬停时略微放大 */
+}

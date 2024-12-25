@@ -1,0 +1,98 @@
+form {
+  width: 500px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  border: 3px solid pink;
+  border-radius: 15px;
+  font-size: 20px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  background: linear-gradient(135deg, #fdfbfb, #ebedee); /* 渐变背景 */
+  transition: transform 0.3s ease; /* 添加交互过渡效果 */
+}
+
+form:hover {
+  transform: scale(1.02); /* 鼠标悬停时放大效果 */
+}
+
+form > label {
+  height: 60px;
+  width: 100%;
+  margin-bottom: 15px; /* 增加底部间距 */
+  display: flex;
+  flex-direction: column; /* 改为垂直排列 */
+}
+
+form > label > input {
+  width: 100%; /* 输入框占满父容器宽度 */
+  height: 40px; /* 增大输入框高度 */
+  font-size: 18px;
+  padding: 5px 10px; /* 增加内边距 */
+  border: 2px solid #ccc; /* 添加边框 */
+  border-radius: 5px; /* 添加圆角 */
+  transition: border-color 0.3s ease; /* 添加过渡效果 */
+}
+
+form > label > input:focus {
+  border-color: #56ab2f; /* 聚焦时改变边框颜色 */
+  outline: none; /* 移除默认的聚焦样式 */
+  box-shadow: 0 0 5px rgba(86, 171, 47, 0.5); /* 聚焦时添加阴影 */
+}
+
+form > p > a {
+  color: skyblue !important;
+  font-weight: bold; /* 加粗文本 */
+  text-decoration: underline; /* 添加下划线 */
+  transition: color 0.3s ease; /* 添加过渡效果 */
+}
+
+form > p > a:hover {
+  color: #007BFF; /* 鼠标悬停时改变颜色 */
+}
+
+form > button {
+  padding: 10px 15px; /* 增大按钮内边距 */
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold; /* 按钮文字加粗 */
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* 渐变背景 */
+  color: #fff; /* 按钮文字颜色 */
+  border: none; /* 去掉边框 */
+  border-radius: 5px; /* 添加圆角 */
+  transition: background 0.3s ease, transform 0.3s ease; /* 添加过渡效果 */
+}
+
+form > button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f); /* 悬停时反转渐变 */
+  transform: translateY(-2px); /* 鼠标悬停时稍微抬起 */
+}
+
+form > span {
+  color: red;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5px;
+  display: none;
+  width: 500px;
+  text-align: center;
+  font-size: 16px; /* 调整字体大小 */
+  font-weight: bold; /* 加粗字体 */
+}
+
+form > label > select {
+  padding: 5px 10px; /* 增加内边距 */
+  font-size: 18px;
+  border: 2px solid #ccc; /* 添加边框 */
+  border-radius: 5px; /* 添加圆角 */
+  transition: border-color 0.3s ease; /* 添加过渡效果 */
+}
+
+form > label > select:focus {
+  border-color: #56ab2f; /* 聚焦时改变边框颜色 */
+  outline: none; /* 移除默认的聚焦样式 */
+  box-shadow: 0 0 5px rgba(86, 171, 47, 0.5); /* 聚焦时添加阴影 */
+}

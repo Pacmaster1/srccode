@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>商品详情页</title>
+  <link rel="stylesheet" href="../css/detail.css">
+  <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body>
+  <div class="header container">
+    商品详情页
+    <p style="display: block;">
+      <a href="./list.html">回到列表页</a>
+    </p>
+  </div>
+
+  <div class="content container">
+    <div class="left box">
+      <div class="middleBox">
+        <img src="" alt="商品图片" class="middleimg">
+      </div>
+    </div>
+    <div class="right">
+      <p class="title">商品名称</p>
+      <p class="price">原价: ¥ <span class="old"></span></p>
+      <p class="price">折扣: ¥ <span class="discount"></span></p>
+      <p class="price">现价: ¥ <span class="curprice"></span></p>
+    </div>
+  </div>
+  <div class="desc container"></div>
+
+  <script src="../lib/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../js/detail.js"></script>
+</body>
+</html>
